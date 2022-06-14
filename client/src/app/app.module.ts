@@ -11,10 +11,12 @@ import {ErrorInterceptor} from "./core/interceptors/error.interceptor";
 import {NgxSpinnerModule} from "ngx-spinner";
 import {LoadingInterceptors} from "./core/interceptors/loading.interceptors";
 import {JwtInterceptor} from "./core/interceptors/jwt.interceptor";
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
