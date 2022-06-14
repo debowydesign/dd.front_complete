@@ -1,0 +1,13 @@
+<header>
+          <span *ngIf="totalCount && totalCount > 0">
+            Jest na stronie
+            <strong>
+              {{(pageNumber-1) * pageSize+1}} -
+              {{pageNumber*pageSize
+            > this.totalCount ? this.totalCount : pageNumber*pageSize
+              }}
+            </strong> z <strong>{{this.totalCount}}</strong> wyników</span>
+  <span *ngIf="totalCount === 0">
+            Dla tego filtra jest  <strong>0</strong> wyników
+          </span>
+</header>
